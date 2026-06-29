@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+venv/
+.venv/
+
+# Raw data and audio files
+data/raw/
+data/audio/
+*.wav
+*.mp3
+*.flac
+
+# Large compressed files
+*.zip
+*.tar
+*.gz
+
+# Large model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+models/
+checkpoints/
+asr_model_xlsr_nso*/
+
+# Kaggle temporary files
+kaggle/
+working/
+
+# System files
+.DS_Store
+Thumbs.db

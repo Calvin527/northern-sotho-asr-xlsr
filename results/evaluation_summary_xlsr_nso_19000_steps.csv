@@ -1,0 +1,2 @@
+model,language,training_steps,approx_epochs,test_samples,WER,WER_percent,CER,CER_percent,substitutions,deletions,insertions,hits,average_audio_duration_seconds,average_processing_time_seconds,average_real_time_factor
+facebook/wav2vec2-xls-r-300m,Northern Sotho / Sepedi,19000,3.0,2829,0.1388240288686054,13.88240288686054,0.0373884860837315,3.73884860837315,1467,437,58,12229,3.716648992576882,0.0581336440874816,0.015968232642652515
