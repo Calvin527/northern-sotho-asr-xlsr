@@ -1,12 +1,12 @@
 torch
 transformers
+accelerate
 datasets
+jiwer
 librosa
 soundfile
-jiwer
 pandas
 numpy
-scikit-learn
 matplotlib
-accelerate
-evaluate
+PyYAML
+safetensors

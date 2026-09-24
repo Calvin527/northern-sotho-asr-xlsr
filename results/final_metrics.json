@@ -1,0 +1,42 @@
+{
+  "xlsr_300m": {
+    "validation_wer_percent": 21.69,
+    "validation_cer_percent": 5.6,
+    "test_wer_percent": 22.78,
+    "test_cer_percent": 5.86,
+    "test_utterances": 2829,
+    "reference_word_tokens": 14133,
+    "exact_matches": 1166,
+    "exact_match_percent": 41.22,
+    "total_word_errors": 3219,
+    "substitutions": 2258,
+    "substitution_percent": 70.15,
+    "deletions": 852,
+    "deletion_percent": 26.47,
+    "insertions": 109,
+    "insertion_percent": 3.39,
+    "best_checkpoint_step": 8100,
+    "average_audio_duration_seconds": 3.716649,
+    "average_processing_time_seconds": 0.031816,
+    "mean_rtf": 0.008728,
+    "median_rtf": 0.008631,
+    "min_rtf": 0.006887,
+    "max_rtf": 0.016939
+  },
+  "mms_1b_fl102_nso": {
+    "test_wer_percent": 46.85,
+    "test_cer_percent": 14.46,
+    "test_utterances": 2829,
+    "reference_word_tokens": 14133,
+    "exact_matches": 531,
+    "exact_match_percent": 18.77,
+    "total_word_errors": 6622,
+    "substitutions": 4157,
+    "substitution_percent": 62.78,
+    "deletions": 1185,
+    "deletion_percent": 17.89,
+    "insertions": 1280,
+    "insertion_percent": 19.33
+  },
+  "comparison_scope": "transcription accuracy only; runtime not compared across hardware environments"
+}

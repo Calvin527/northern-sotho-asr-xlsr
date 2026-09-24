@@ -1,0 +1,59 @@
+project:
+  title: "Fine-Tuning of an End-to-End Automatic Speech Recognition Model for Low-Resource Northern Sotho"
+  author: "Maroka Musa Calvin"
+  year: 2026
+
+dataset:
+  name: "NCHLT Northern Sotho Speech Corpus"
+  language_code: "nso"
+  sampling_rate_hz: 16000
+  train_utterances: 50655
+  validation_utterances: 5629
+  test_utterances: 2829
+  total_utterances: 59113
+  test_reference_word_tokens: 14133
+
+tokenizer:
+  type: "character"
+  reported_vocab_size: 32
+  word_delimiter_token: "|"
+  unk_token: "[UNK]"
+  pad_token: "[PAD]"
+  lowercase: true
+  remove_unnecessary_punctuation: true
+  collapse_whitespace: true
+  preserve_northern_sotho_diacritics: true
+
+xlsr:
+  model_id: "facebook/wav2vec2-xls-r-300m"
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  effective_batch_size: 4
+  learning_rate: 0.0001
+  warmup_ratio: 0.05
+  lr_scheduler_type: "linear"
+  max_steps: 19000
+  eval_steps: 900
+  save_steps: 900
+  fp16: true
+  seed: 42
+  freeze_feature_encoder: true
+  ctc_loss_reduction: "mean"
+  ctc_zero_infinity: true
+  best_checkpoint_step: 8100
+  decoding: "greedy_ctc"
+  external_language_model: false
+  beam_search_rescoring: false
+  pronunciation_lexicon: false
+  training_hardware: "NVIDIA RTX 2000 Ada Generation GPU"
+  training_environment: "University JupyterLab"
+  inference_hardware: "NVIDIA RTX 2000 Ada Generation GPU"
+
+mms_baseline:
+  model_id: "facebook/mms-1b-fl102"
+  target_language: "nso"
+  additional_nchlt_finetuning: false
+  decoding: "greedy_ctc"
+  inference_hardware: "Tesla T4"
+  environment: "Kaggle"
+  runtime_compared_with_xlsr: false
