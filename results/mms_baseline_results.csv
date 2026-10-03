@@ -1,0 +1,2 @@
+﻿model,language_adapter,nchlt_fine_tuned,test_utterances,reference_word_tokens,wer_percent,cer_percent,exact_match_utterances,exact_match_percent,total_word_errors,substitutions,substitution_percent,deletions,deletion_percent,insertions,insertion_percent,inference_hardware,environment,comparison_scope,source
+facebook/mms-1b-fl102,nso,False,2829,14133,46.85,14.46,531,18.77,6622,4157,62.78,1185,17.89,1280,19.33,Tesla T4,Kaggle,transcription_accuracy_only,Final honours report Table 4.4

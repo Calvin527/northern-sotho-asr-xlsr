@@ -1,0 +1,95 @@
+{
+  "project": {
+    "title": "Fine-Tuning of an End-to-End Automatic Speech Recognition Model for Low-Resource Northern Sotho",
+    "author": "Maroka Musa Calvin",
+    "year": 2026,
+    "package_type": "cleaned_reproducibility_implementation"
+  },
+  "dataset": {
+    "name": "NCHLT Northern Sotho Speech Corpus",
+    "language_code": "nso",
+    "sampling_rate_hz": 16000,
+    "reported_train_utterances": 50655,
+    "reported_validation_utterances": 5629,
+    "official_test_utterances": 2829,
+    "reported_total_utterances": 59113,
+    "official_test_speakers": 8,
+    "official_test_reference_words": 14133
+  },
+  "tokenizer": {
+    "type": "character_level_ctc",
+    "vocab_size": 32,
+    "word_delimiter_token": "|",
+    "unk_token": "[UNK]",
+    "pad_token": "[PAD]",
+    "bos_token": "<s>",
+    "eos_token": "</s>",
+    "preserve_characters": [
+      "š"
+    ],
+    "vocabulary_source": "training_transcripts"
+  },
+  "model": {
+    "model_id": "facebook/wav2vec2-xls-r-300m",
+    "freeze_convolutional_feature_encoder": true,
+    "fine_tune_transformer_encoder": true,
+    "fine_tune_ctc_head": true,
+    "ctc_loss_reduction": "mean",
+    "ctc_zero_infinity": true
+  },
+  "training": {
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "effective_train_batch_size": 4,
+    "learning_rate": 0.0001,
+    "lr_scheduler_type": "linear",
+    "warmup_ratio": 0.05,
+    "max_steps": 19000,
+    "evaluation_strategy": "steps",
+    "eval_steps": 900,
+    "save_strategy": "steps",
+    "save_steps": 900,
+    "logging_steps": 100,
+    "fp16": true,
+    "gradient_checkpointing": true,
+    "seed": 42,
+    "data_seed": 42,
+    "load_best_model_at_end": true,
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "report_to": "none",
+    "remove_unused_columns": false
+  },
+  "evaluation": {
+    "decoding": "greedy_ctc",
+    "external_language_model": false,
+    "beam_search_rescoring": false,
+    "pronunciation_lexicon": false,
+    "reported_selected_checkpoint_step": 8100,
+    "reported_validation_wer_percent": 21.69,
+    "reported_validation_cer_percent": 5.6,
+    "reported_test_wer_percent": 22.78,
+    "reported_test_cer_percent": 5.86
+  },
+  "hardware": {
+    "fine_tuning_gpu": "NVIDIA RTX 2000 Ada Generation GPU",
+    "fine_tuning_environment": "University JupyterLab",
+    "xlsr_inference_gpu": "NVIDIA RTX 2000 Ada Generation GPU",
+    "mms_baseline_gpu": "Tesla T4",
+    "mms_baseline_environment": "Kaggle"
+  },
+  "reproducibility": {
+    "historical_notebook_split": {
+      "train_utterances": 50656,
+      "validation_utterances": 5628,
+      "development_total": 56284
+    },
+    "submitted_report_split": {
+      "train_utterances": 50655,
+      "validation_utterances": 5629,
+      "development_total": 56284
+    },
+    "note": "This repository is a cleaned reproducibility implementation. Reconstructed manifests must not be presented as proof of the exact historical row membership used in the original run."
+  }
+}

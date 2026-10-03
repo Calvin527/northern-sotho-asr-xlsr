@@ -95,6 +95,7 @@ def main():
         save_steps=900,
         logging_steps=100,
         fp16=True,
+        gradient_checkpointing=True,
         seed=SEED,
         data_seed=SEED,
         save_strategy="steps",

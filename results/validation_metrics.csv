@@ -1,0 +1,2 @@
+﻿partition,selected_checkpoint_step,loss,wer_percent,cer_percent,status,source
+validation,8100,0.257392,21.69,5.6,reported_final_study_metric,Final honours report / SATNAC camera-ready results

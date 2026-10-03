@@ -1,0 +1,2 @@
+﻿partition,selected_checkpoint_step,utterances,reference_word_tokens,loss,wer_percent,cer_percent,exact_match_utterances,exact_match_percent,total_word_errors,status,source
+official_test,8100,2829,14133,0.340143,22.78,5.86,1166,41.22,3219,reported_final_study_metric,Final honours report / SATNAC camera-ready results

@@ -1,0 +1,10 @@
+﻿reference_transcript,predicted_transcript,utterance_wer_percent,example_category,source
+ba re go fetša ba,ba re go fetša ba,0.0,exact_match,Final honours report Table 4.6
+maikarabelo a go šireletša tikologo,maikarabelo a go šireletša tikologo,0.0,exact_match,Final honours report Table 4.6
+buša pelo o nthekge bjalo,buša pelo o nthekge bjalo,0.0,exact_match,Final honours report Table 4.6
+na o na le mosadi,na o na le mosadi,0.0,exact_match,Final honours report Table 4.6
+thuto ka letsogong la ka,thuto ka letlogong la ka,20.0,minor_lexical_deviation,Final honours report Table 4.6
+sa tlile go nyala ba,sa tile go nyala ba,20.0,minor_lexical_deviation,Final honours report Table 4.6
+ke e filwe ke badimo,ke filwe ke ba dimo,60.0,deletion_and_word_boundary_error,Final honours report Table 4.6
+red sea coast,red se coust,66.666667,borrowed_english_phrase,Final honours report Table 4.6
+programming language,prokgremeng langwe,100.0,borrowed_english_phrase,Final honours report Table 4.6

@@ -1,0 +1,10 @@
+﻿reference_transcript,predicted_transcript,utterance_wer_percent,example_category
+ba re go fetša ba,ba re go fetša ba,0.0,exact_match
+maikarabelo a go šireletša tikologo,maikarabelo a go šireletša tikologo,0.0,exact_match
+buša pelo o nthekge bjalo,buša pelo o nthekge bjalo,0.0,exact_match
+na o na le mosadi,na o na le mosadi,0.0,exact_match
+thuto ka letsogong la ka,thuto ka letlogong la ka,20.0,minor_lexical_deviation
+sa tlile go nyala ba,sa tile go nyala ba,20.0,minor_lexical_deviation
+ke e filwe ke badimo,ke filwe ke ba dimo,60.0,deletion_and_word_boundary_error
+red sea coast,red se coust,66.666667,borrowed_english_phrase
+programming language,prokgremeng langwe,100.0,borrowed_english_phrase

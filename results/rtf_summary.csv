@@ -1,0 +1,9 @@
+﻿measure,value,unit,scope,source
+number_of_test_recordings,2829,recordings,official_test,Final honours report Table 4.3
+average_audio_duration,3.716649,seconds,official_test,Final honours report Table 4.3
+average_forward_pass_time,0.031816,seconds,official_test,Final honours report Table 4.3
+mean_rtf,0.008728,ratio,official_test,Final honours report Table 4.3
+median_rtf,0.008631,ratio,official_test,Final honours report Table 4.3
+minimum_rtf,0.006887,ratio,official_test,Final honours report Table 4.3
+maximum_rtf,0.016939,ratio,official_test,Final honours report Table 4.3
+rtf_below_1_percent,100.0,percent,official_test,Final honours report Table 4.3

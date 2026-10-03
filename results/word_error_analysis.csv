@@ -1,0 +1,5 @@
+﻿error_type,count,percentage_of_total_errors,reference_word_tokens,source
+substitutions,2258,70.15,14133,Final honours report Table 4.7
+deletions,852,26.47,14133,Final honours report Table 4.7
+insertions,109,3.39,14133,Final honours report Table 4.7
+total_errors,3219,100.0,14133,Final honours report Table 4.7
